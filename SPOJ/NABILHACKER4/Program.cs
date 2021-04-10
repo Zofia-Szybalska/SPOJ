@@ -16,8 +16,8 @@ namespace NABILHACKER4
             for (; numberOfCases > 0; numberOfCases--)
             {
                 keyLog = Console.ReadLine();
-                password.Clear();
-                tempPasswordEnd.Clear();
+                password = new Stack<char>(keyLog.Length);
+                tempPasswordEnd = new Stack<char>(keyLog.Length);
                 for (int i = 0; i < keyLog.Length; i++)
                 {
                     if (keyLog[i] == '>')
